@@ -106,9 +106,9 @@ public class MapGenerator {
 
 	static ArrayList DeleteCollidingRooms(ArrayList rooms) {
 		// Iterate through the list.
-		for (int i = 0; i < rooms.Count; i++) {
+		for (int i = 0; i < rooms.Count - 1; i++) {
 			// Check each room again.
-			for (int j = 0; j < rooms.Count; j++) {
+			for (int j = 0; j < rooms.Count - 1; j++) {
 				// We don't need to check if we're colliding with ourself.
 				if (i == j) {
 					continue;
